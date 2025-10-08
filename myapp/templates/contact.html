@@ -1,0 +1,694 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Trendings around</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+    
+        <!-- Favicon -->
+        <link href="static/img/logo.png" rel="icon">
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    
+        <!-- Libraries Stylesheet -->
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"> -->
+        
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        
+    </head>
+    
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+        <div class="container-xxl bg-white p-0">
+            <!-- Spinner Start -->
+            <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+    
+
+            <!-- Navbar & Hero Start -->
+            <div class="container-xxl position-relative p-0" id="home">
+                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                    <a href="" class="navbar-brand p-0">
+                        <img src="{% static 'img/logo.png' %}" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto py-0">
+                            <a href="#home" class="nav-item nav-link active">Home</a>
+                            <a href="#about" class="nav-item nav-link">About us</a>
+                            <a href="#feature" class="nav-item nav-link">Features</a>
+                            <a href="#AppPreview" class="nav-item nav-link">App Preview</a>
+                            <a href="#Download" class="nav-item nav-link">Downloads</a>
+                            <a href="#contact" class="nav-item nav-link">Connect Us</a>
+                        </div>
+                        <a href="{% url 'download_brochure' %}" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">
+                            <i class="fas fa-download"></i> Brochure
+                        </a>
+                    </div>
+                </nav>
+    
+                <div class="container-xxl bg-primary hero-header">
+                    <div class="container px-lg-5">
+                        <div class="row g-5">
+                            <div class="col-lg-8 text-center text-lg-start">
+                                <h1 class="text-white mb-4 animated slideInDown">The Revolutionary App That Helps To Empower Your Digital World:</h1>
+                                <h4 class="text-white mb-4 animated slideInDown">Connect, Discover and Engage!</h4>
+                                <p class="text-white pb-3 animated slideInDown">"Trendings Around" is an innovative mobile application designed to serve as a multi-utility platform, seamlessly integrating Media, Social media,and Business database.</p>
+                                <a target="_blank" data-scroll="" href="https://apps.apple.com/in/app/trendings-around/id6465681185" class="btn btn-primary-gradient btn-lg wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                    <i class="fab fa-apple fa-2x text-white me-3"></i>
+                                    <strong>App Store</strong> 
+                                </a>
+                                                                
+                                <a target="_blank" data-scroll="" href="https://play.google.com/store/apps/details?id=com.shadow.trendingsaround" class="btn btn-primary-gradient btn-lg wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                    <img src="{% static 'img/google-play.png' %}" alt="Google Play Icon" style="width:30px; height:30px;" class="me-3">
+                                   <strong> Play Store</strong>
+                                </a>
+                                
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="owl-carousel screenshot-carousel">
+                                    <img class="img-fluid" src="{% static 'img/feed_page.jpg' %}" alt="">
+                                    <img class="img-fluid" src="{% static 'img/main_page3.jpg' %}" alt="">
+                                    <img class="img-fluid" src="{% static 'img/clips17.jpg' %}" alt="">
+                                    <img class="img-fluid" src="{% static 'img/bussiness_around5.jpg' %}" alt="">
+                                    <img class="img-fluid" src="{% static 'img/news18.jpg' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar & Hero End -->
+    
+             <!-- About Start -->
+             <div class="container-xxl py-5" id="about">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <!-- Image on the left -->
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="{% static 'img/about1.jpg' %}" alt="About the App Image">
+                        </div>
+            
+                        <!-- Text on the right with centered heading and paragraph -->
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="text-center">
+                                <h1 class="mb-4">About the App</h1>
+                                <p class="lead mb-4" style="color: #333; font-weight: bold;"><strong>"Your All in one mobile App for Business, Social Media & News"</strong></p>
+                            </div>
+                            <div class="row g-6 mb-6">
+                                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                                    <p class="mb-4" style="color: #885959; text-align: justify;">
+                                        <strong>"Trendings Around" is a multi-utility mobile application that combines various features, including business listings, classified ads, job postings, and social media functionalities. It serves as a comprehensive platform for users to connect, browse services, find job opportunities, and engage socially, making it a one-stop solution for diverse community needs. It aims to be a comprehensive solution, addressing various user needs while promoting local connections. By integrating business listings, classifieds, job opportunities, and social networking, it creates a dynamic platform for users to engage with their community effectively.</strong>
+                                    </p>
+                                    <p class="mb-4" style="color: #885959; font-size: 1.5rem; font-weight: bold;">
+                                       <p class="lead mb-4" style="color: #333; font-weight: bold;">Why is business listing with Trendings Around essential?</p>
+                                    </p>                                                                     
+                                    <p style="color: #885959;" text-align: justify;>
+                                        <i class="fa fa-check text-primary-gradient me-3"></i>
+                                        Business listings play a crucial role in enhancing a company's online presence, offering a structured avenue for businesses to increase their exposure and credibility.
+                                      </p>
+                                      
+                                    <p style="color: #885959;  text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>They provide consistent and accurate information across various platforms, which is essential for search engine optimization and for customers seeking reliable business details. </p>
+                                    <p style="color: #885959;  text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Moreover, integrating social media within these listings can amplify a company's reach and engagement, allowing for a more dynamic interaction with the target audience. Together, business listings and social media create a synergistic effect that can significantly boost a company's visibility and customer acquisition efforts.</p>
+                                    <p style="color: #885959;  text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Having a database filled with customer information, products, and analytics alone does not generate business value. </p>
+                                    <p style="color: #885959;  text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>The true value of a business database emerges when it is connected to a user base. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        <!-- About End -->
+
+         <!-- Features Start -->
+         <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h1> Promot Your Business with <br> Trendings Around</h1>
+                    <!-- <p style="color: #333;"><strong>Your Business Presence with us.</strong></p> -->
+                    <h3 class="text-primary-gradient fw-medium"><strong>Application Features</strong></h3><br/>
+                </div>
+                <div class="row g-4">
+                    <!-- Image on the left side -->
+                    <div class="col-lg-4 order-lg-1 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="{% static 'img/around_page4.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/bussiness_around5.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/bussiness_profile7.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/classified10.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/classified12.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/jobportal9.jpg' %}" alt="">
+                        </div>
+                    </div>
+        
+                    <!-- Features on the right side -->
+                    <div class="col-lg-8 order-lg-2">
+                        <div class="row g-4">
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                         <img src="{% static 'img/social-media.png' %}" alt="Social Icon" class="img-fluid" style="width: 30px; height: 30px;">
+                                    </div>
+                                    <h5 class="mb-3"><strong>Social Media</strong></h5>
+                                    <p class="m-0" style="text-align: justify; color: #652b2b;">The social media feature allows users to connect, share, and engage with trending topics and events in real-time. This feature enhances user experience by promoting active participation and fostering a vibrant community focused on trending discussions.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                        <img src="{% static 'img/chat.png' %}" alt="Chat Icon" class="img-fluid" style="width: 30px; height: 30px;">
+                                    </div>
+                                    <h5 class="mb-3"><strong>Chat</strong></h5>
+                                    <p class="m-0" style="text-align: justify; color: #652b2b;">An in-built chat feature enables real-time communication within an app or website, enhancing user engagement and providing quick access to support. It fosters community interaction and integrates with other tools for a seamless experience.</p>    
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                        <img src="{% static 'img/play.png' %}" alt="Play & Win Icon" class="img-fluid" style="width: 30px; height: 30px;">
+                                    </div>
+                                    <h5 class="mb-3"><strong>Play & Win</strong></h5>
+                                    <p class="m-0" style="text-align: justify; color: #652b2b;">The "Play and Win" feature is a quiz-based engagement tool where users answer questions for a chance to earn rewards, such as cash prizes or other gifts. It promotes user interaction and competition while providing educational value.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                        <img src="{% static 'img/news.png' %}" alt="News Icon" class="img-fluid" style="width: 30px; height: 30px;">
+                                    </div>
+                                    <h5 class="mb-3"><strong>News</strong></h5>
+                                    <p class="m-0" style="text-align: justify; color: #652b2b;">The news feature is designed to keep users informed about the latest developments, trends, and events happening locally and globally. This feature enhances user engagement by providing a dynamic platform for accessing and interacting with news and community awareness.</p>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Features on the left side -->
+                    <div class="col-lg-8 order-lg-1">
+                        <div class="row g-4">
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                        <img src="{% static 'img/offers.png' %}" alt="Social Icon" class="img-fluid" style="width: 30px; height: 30px;">
+                                    </div>
+                                    <h5 class="mb-3"><strong>Best Offers</strong></h5>
+                                    <p class="m-0" style="text-align: justify; color: #652b2b;">The "Best Offer" feature helps businesses effectively reach out to the public by showcasing attractive promotions and discounts. It increases visibility, engages customers, provides a competitive edge, and offers insights into customer preferences.</p>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                        <img src="{% static 'img/business1.png' %}" alt="Business Icon" class="img-fluid" style="width: 30px; height: 30px;">
+                                    </div>
+                                    <h5 class="mb-3"><strong>Business Listing</strong></h5>
+                                    <p class="m-0" style="text-align: justify; color: #652b2b;">This feature is designed to help users discover and connect with local businesses and services. This not only supports local businesses by increasing their visibility but also enhances user experience by providing easy access to essential services and information.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                        <img src="{% static 'img/ads.png' %}" alt="Ads Icon" class="img-fluid" style="width: 30px; height: 30px;">
+                                    </div>
+                                    <h5 class="mb-3"><strong>Classified Ads</strong></h5>
+                                    <p class="m-0" style="text-align: justify; color: #652b2b;">The classified ads feature in the Trendings Around app provides a platform for users to buy, sell, and trade various items and services within their local community. This feature enhances community engagement by providing a convenient way for users to connect over goods and services, promoting local commerce and interaction.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="feature-item bg-light rounded p-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                        <img src="{% static 'img/job.png' %}" alt="Job Icon" class="img-fluid" style="width: 30px; height: 30px;">
+                                    </div>
+                                    <h5 class="mb-3"><strong> Job Portal</strong></h5>
+                                    <p class="m-0" style="text-align: justify; color: #652b2b;">The job portal feature serves as a comprehensive platform for job seekers and employers to connect, facilitating the recruitment process. This feature enhances the job search experience by providing a user-friendly platform for both job seekers and employers, promoting efficient hiring and career development within the community.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Image on the right side -->
+                    <div class="col-lg-4 order-lg-2 d-flex justify-content-center justify-content-lg-start wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid bottom-align" src="{% static 'img/clips17.jpg' %}" alt="">
+                            <img class="img-fluid bottom-align" src="{% static 'img/play&win16.jpg' %}" alt="">
+                            <img class="img-fluid bottom-align" src="{% static 'img/chats13.jpg' %}" alt="">
+                            <!-- <img class="img-fluid bottom-align" src="{% static 'img/jobportal9.jpg' %}" alt=""> -->
+                            <img class="img-fluid bottom-align" src="{% static 'img/news18.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Features End -->
+    
+          <!-- benifit Start -->
+        <section class="benifits">   
+          <div class="container-xxl py-5" id="feature">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h1> Be a Part Of India's Largest Business DataBase...</h1>
+                    <!-- <h1>BENEFITS:</h1>
+                    <p style="color: #4d4b4b; font-weight: bold;">Trendings around is better way to promote your business.</p> -->
+                </div><br/>
+                <div class="row g-4">
+                    <!-- Image on the left side -->
+                    <div class="col-lg-4 order-lg-1 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="{% static 'img/bussiness_around5.jpg' %}" alt="Trending Image">
+                            <img class="img-fluid" src="{% static 'img/baselisting8.jpg' %}" alt="Trending Image">
+                        </div>
+                    </div><br/>
+        
+                    <!-- Benefits on the right side -->
+                    <div class="col-lg-8 order-lg-2 d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4" style="color: #561b1b;">Business Listing</h1>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Strengthen Your Online Presence in the market</p>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Amplify Your Visibility to Local Community</p>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Improve Local SEO with Google Maps Integration</p>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Build social proof, with customer reviews about your business in ‘Trendings Around’.</p>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Easy way for your customers to find your physical shopfront.</p>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Make sure your online presence in the market with ‘Trendings Around’.</p>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Anyone can advertise with TA with a minimum cost.</p>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Get Discovered and Hired More Frequently with TA.</p>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Sales leads to be provided.</p>
+                        <p style="color: #885959; text-align: justify;"><i class="fa fa-check text-primary-gradient me-3"></i>Backend support to promote offers.</p>                        
+                    </div>
+                </div><br/>
+    
+                <div class="row gy-4 align-items-center features-item">
+                    <div class="col-lg-4 order-lg-2 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="{% static 'img/classified10.jpg' %}" alt="Trending Image">
+                            <img class="img-fluid" src="{% static 'img/classified12.jpg' %}" alt="Trending Image">
+                        </div>
+                    </div>                
+                    <div class="col-lg-8 order-lg-1 d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4" style="color: #561b1b;">Classified Ads</h1>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Provides wider Reach, allowing advertisers to target a broader audience.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Ads are accessible anytime and anywhere with internet access, providing convenience for both advertisers and potential buyers.</p>
+                        <p class="mb-4" style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Classifieds Ads are cost effective as compared to business listing, its suits to the budget of a common man. </p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Available for shorter period.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>IT can be posted and published immediately, eliminating the delays in display.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Advanced search and filter options based on categories, location, etc., making it easier for users to find relevant ads quickly.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Chat Option helps easy communication between the parties.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Navigation helps to find the location easily.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Ads can be easily edited, updated, or removed as needed, providing flexibility.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Images, videos, and other multimedia elements to enhance the attractiveness and effectiveness of the ad.</p>                        
+                    </div>                
+                  </div>
+    
+                  <div class="row g-4">
+                    <!-- Image on the left side -->
+                    <div class="col-lg-4 order-lg-1 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="{% static 'img/jobportal9.jpg' %}" alt="Trending Image">
+                            <img class="img-fluid" src="{% static 'img/jobport.jpg' %}" alt="Trending Image">
+                        </div>
+                    </div>
+        
+                    <!-- Benefits on the right side -->
+                    <div class="col-lg-8 order-lg-2 d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4" style="color: #561b1b;">Job Portal</h1>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Each job post includes details such as job title, company name, location, job description etc.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Advanced filtering options</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Global or at least national reach, allowing employers to attract a larger pool of candidates.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>More affordable especially considering the potential audience size and duration of exposure.</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Ensures faster Hiring Process</p>
+                        <p style="color: #885959;"><i class="fa fa-check text-primary-gradient me-3"></i>Mobile app allowing users to search and apply for jobs using smartphones, providing convenience and accessibility on the go.</p>                        
+                    </div>
+                </div><br/>
+            </div>
+        </div>
+        </section><br/>
+        <!-- benifit  End -->
+    
+            <!-- Screenshot Start -->
+            <div class="container-xxl py-5" id="AppPreview">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-5 align-items-center">
+                        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                            <h2>Application <span>Previews</span></h2>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+                            <div id="app-screen" class="owl-carousel owl-theme">
+                                <div class="ms-4">
+                                <div class="item">
+                                    <img src="{% static 'img/register.jpg' %}" class="img-responsive" alt="Screen 1">
+                                </div>
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/login.jpg' %}" class="img-responsive" alt="Screen 2">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/main_page3.jpg' %}" class="img-responsive" alt="Screen 3">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/feed_page.jpg' %}" class="img-responsive" alt="Screen 4">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/around_page4.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/bussiness_around5.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/funiture_page6.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/bussiness_profile7.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/baselisting8.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/jobportal9.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/classified10.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/sales&purches11.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/classified12.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/chats13.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/interview14.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                                <div class="item">
+                                    <img src="{% static 'img/play&win16.jpg' %}" class="img-responsive" alt="Screen 5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <!-- Screenshot End -->
+    
+            <!--Youtube video start-->
+            <div class="container-xxl">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <!-- Section Title -->
+                        <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                            <h2>At a Glance</h2>
+                            <h4 style="color: #885959; font-weight: bold;">Simplify your life and stay connected with everything that matters.</h4>
+                        </div>
+                        <!-- Video Section -->
+                        <div class="col-lg-12 d-flex justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="video-section text-center">
+                                <!-- <h2>Watch Our App Overview</h2> -->
+                                <div class="video-container mt-4" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background-color: #000;">
+                                    <iframe loading="lazy" title="Jobly Canada Introduction" 
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                        src="https://www.youtube.com/embed/hxB0grKtxLQ" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen="">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <!--youtube video end-->
+           
+            <!-- Download Start -->
+            <div class="container-xxl"id="Download">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="{% static 'img/about1.jpg' %}">
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <!-- <h5 class="text-primary-gradient fw-medium">Download</h5> -->
+                            <h1 class="mb-4">Download The App Now!</h1>
+                            <p class="mb-4" style="color: #885959;"><strong> Available at Google Play Store and App Store.</strong></p>
+                            <div class="row g-4">
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                    <a href="https://apps.apple.com/in/app/trendings-around/id6465681185" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                        <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                        <div class="ms-3">
+                                            <p class="text-white mb-0">Available On</p>
+                                            <h5 class="text-white mb-0">App Store</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                    <a href="https://play.google.com/store/apps/details?id=com.shadow.trendingsaround" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                        <img src="{% static 'img/google-play.png' %}" alt="Google Play Icon" style="width:50px; height:50px;" class="">
+                                        <div class="ms-3">
+                                            <p class="text-white mb-0">Available On</p>
+                                            <h5 class="text-white mb-0">Play Store</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Download End -->
+    
+            <!-- Testimonial Start -->
+            <div class="container-xxl" id="review">
+                <div class="container">
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium"><strong> Testimonial</strong></h5>
+                        <h1 class="mb-5">User Reviews!</h1>
+                    </div>
+                    <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="testimonial-item rounded p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'img/business1.png' %}" style="width: 85px; height: 85px;">
+                                <div class="ms-4">
+                                    <h5 class="mb-1">Er.Saurabh kumar mishra (Sunny Baba)</h5>
+                                    <div>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0"style="text-align: justify;">Trendings Around is a very good application and is very useful. In this application you can do everything like upload photos, upload videos etc. You can also list your businesses in this application. Overall, this application is very useful.</p>
+                        </div>
+                        <div class="testimonial-item rounded p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'img/person.jpg' %}" style="width: 85px; height: 85px;">
+                                <div class="ms-4">
+                                    <h5 class="mb-1">Sunil Kori</h5>
+                                    <div>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0"style="text-align: justify;">Excellent..............I have been using this application since last one month. I am using it as much as I can. Very nice application, you should also try it once. Trending around gives you the opportunity to grow your business on social media.</p>
+                        </div>
+                        <div class="testimonial-item rounded p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'img/female.png' %}" style="width: 85px; height: 85px;">
+                                <div class="ms-4">
+                                    <h5 class="mb-1">seekha thakur</h5>
+                                    <div>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0"style="text-align: justify;">User friendly.Many features in one customer service is amazing.</p>
+                        </div>
+                        <div class="testimonial-item rounded p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1"  src="{% static 'img/person1.png' %}"  style="width: 85px; height: 85px;">
+                                <div class="ms-4">
+                                    <h5 class="mb-1">Rashid Khan</h5>
+                                    <div>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                        <small class="fa fa-star text-warning"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0"style="text-align: justify;">It's a wonderful app for using social media and increase our business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+
+            <!-- Contact Start -->
+            <div class="container-xxl py-5" id="contact">
+                <div class="container py-5 px-lg-5">
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        {% comment %} <h5 class="text-primary-gradient fw-medium">Contact Us</h5> {% endcomment %}
+                        <h1 class="mb-5">Get In Touch!</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="wow fadeInUp" data-wow-delay="0.3s">
+                                <form method="POST">
+                                    {% csrf_token %}
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                                <label for="name">Your Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px"></textarea>
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact End -->
+            
+           <!-- Footer Start -->
+           <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <img src="{% static 'img/logo.png' %}" alt="Logo" style="max-width: 50px; margin-bottom: 20px;">
+                        <p class="text-light">Contact Us:</p> 
+                        <p><i class="fa fa-envelope me-2"></i>info@trendingsaround.com</p>
+                
+                        <!-- Social Media Links -->
+                        <div class="d-flex flex-column">
+                            <p class="text-light">Connect with Us:</p>
+                            <div class="d-flex">
+                                <a class="btn btn-outline-light btn-social" href="https://twitter.com/trendingsaround"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61564272899475"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/trendingsaroundapp"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/trendings-around"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@Trendingshadow1"><i class="fab fa-youtube"></i></a>
+                            </div>                        
+                        </div><br/>
+                            <p class="text-light">Explore Our Platform:</p>
+                            <p>
+                                <a class="btn btn-outline-light" 
+                                   href="https://www.trendingsaround.com" 
+                                   target="_blank" 
+                                   data-content="Click to explore all the features and services we offer!">Visit Our Website</a>
+                            </p>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-light mb-4">Quick Links</h5>
+                        <ul class="list-unstyled text-light">
+                           <li><a href="#home" class="btn btn-link">Home</a></li>
+                           <li><a href="#about" class="btn btn-link">About us</a></li>
+                           <li><a href="#feature" class="btn btn-link">Features</a></li>
+                           <li><a href="#AppPreview" class="btn btn-link">App Preview</a></li>
+                           <li><a href="#Download" class="btn btn-link">Downloads</a></li>
+                           <li><a href="#contact" class="btn btn-link">Connect Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-light mb-4">Tutorials</h5>
+                        <ul class="list-unstyled text-light small-text">
+                            <li><a href="https://youtu.be/2aRoyDNuLsk?si=WrsU1cuYB06Cuw9_" target="_blank" class="btn btn-link">How to share clips</a></li>
+                            <li><a href="https://youtu.be/4NhHCbqVYpU?si=o_-RROSDZFu4f9lG" target="_blank" class="btn btn-link">How to upload photos and information</a></li>
+                            <li><a href="https://youtu.be/xCS3s7oIVIo?si=Mzna9N5lgR_ejjek" target="_blank" class="btn btn-link">How to register</a></li>
+                        </ul>
+                    </div>
+                             
+                     <!-- QR Codes aligned to the right end -->
+                    <div class="col-md-4 col-lg-3 ms-auto d-flex align-items-end">
+                        <div class="d-flex align-items-end">
+                            <!-- iOS QR Code -->
+                            <div class="text-center me-3">
+                                <img src="{% static 'img/iOS App QR Code.jpg' %}" alt="iOS QR Code" style="max-width: 100px;">
+                                <p class="scan-text animated-text"><i class="fab fa-apple me-1"></i> Scan for iOS App</p>
+                            </div>
+                            <!-- Android QR Code -->
+                            <div class="text-center">
+                                <img src="{% static 'img/Android App QR Code.jpg' %}" alt="Android QR Code" style="max-width: 100px;">
+                                <p class="scan-text animated-text"><i class="fab fa-android me-1"></i> Scan for Android App</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+    
+</body>
+</html>
